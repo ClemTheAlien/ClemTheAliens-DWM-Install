@@ -47,7 +47,5 @@ patches -i patches/[PATCH]
 sudo make clean install
 ```
 
-
-
 NOTE: Check if each patch works seperately 
 
