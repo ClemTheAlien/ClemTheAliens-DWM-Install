@@ -51,7 +51,7 @@ NOTE: Check if each patch works seperately
 
 #### Gitclone this repo
 ```sh
-git clone
+git clone https://github.com/ClemTheAlien/ClemTheAliens-DWM-Rice
 cp config.h ~/.desktopenv/dwm/config.h
 ```
 
@@ -68,7 +68,7 @@ feh --bg-fill [WAllPAPER DIR]/[WALLPAPER]
 
 #### Git clone Picom conf
 ```sh
-git clone
+git clone https://github.com/ClemTheAlien/ClemTheAliensPicomConf
 sudo cp picom.conf /etc/xdg/picom.conf
 ```
 
