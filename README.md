@@ -49,3 +49,26 @@ sudo make clean install
 
 NOTE: Check if each patch works seperately 
 
+#### Gitclone this repo
+```sh
+git clone
+cp config.h ~/.desktopenv/dwm/config.h
+```
+
+### Wallpaper and Picom 
+Install Feh and Picom
+```sh
+sudo pacman -S feh picom 
+#Change the install method based upon your linux distro. Clem uses Arch currently.
+```
+Set Wallpaper 
+```sh
+feh --bg-fill [WAllPAPER DIR]/[WALLPAPER]
+```
+
+#### Git clone Picom conf
+```sh
+git clone
+sudo cp picom.conf /etc/xdg/picom.conf
+```
+
