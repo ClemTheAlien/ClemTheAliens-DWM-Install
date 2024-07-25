@@ -1,4 +1,4 @@
-# Clems-DWM-Rice
+# Clems-DWM-Install
 ## Install Base 
 This is ClemTheAlien's DWM Rice.
 First Git Clone the latest DWM, Dmenu and St repos into your Linux OS or use the binaries uploaded here.
