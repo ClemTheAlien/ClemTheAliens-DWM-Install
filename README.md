@@ -35,6 +35,10 @@ NOTE: you can adjust your resolution if there are errors with Xrandr
 Save these patches to your Downloads
 https://dwm.suckless.org/patches/alwayscenter/
 https://dwm.suckless.org/patches/uselessgap/
+https://dwm.suckless.org/patches/alpha/
+
+or download the patches from this repo 
+
 
 ```sh
 mkdir .desktopenv/dwm/patches
