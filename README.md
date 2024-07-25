@@ -1,7 +1,7 @@
 # Clems-DWM-Rice
 ## Install Base 
 This is ClemTheAlien's DWM Rice.
-First Git Clone the latest DWM, Dmenu and St repos into your Linux OS
+First Git Clone the latest DWM, Dmenu and St repos into your Linux OS or use the binaries uploaded here.
 ```sh 
 git clone https://git.suckless.org/dwm
 git clone git://git.suckless.org/dmenu
@@ -22,11 +22,13 @@ cd st & sudo make clean install
 ```
 
 
-### Change Resolution and adding DWM to exec 
+### Adding DWM to exec 
 ```sh
-echo "xrandr --output "[OUTPUT]" --mode [RESOLUTION]" > .xinitrc
+echo "#!/bin/bash" > .xinitrc
 echo "exec dwm" > .xinitrc
 ```
+
+NOTE: you can adjust your resolution if there are errors with Xrandr
 
 ## Ricing
 ### Patches
@@ -47,13 +49,8 @@ patches -i patches/[PATCH]
 sudo make clean install
 ```
 
-NOTE: Check if each patch works seperately 
+NOTE: Check if each patch works seperately. You might have to do some copy and pasting of C code if the patches dont work. Also delete config.h before you recompile after a patch (after the first patch).
 
-#### Gitclone this repo
-```sh
-git clone https://github.com/ClemTheAlien/ClemTheAliens-DWM-Rice
-cp config.h ~/.desktopenv/dwm/config.h
-```
 
 ### Wallpaper and Picom 
 Install Feh and Picom
@@ -71,4 +68,4 @@ feh --bg-fill [WAllPAPER DIR]/[WALLPAPER]
 git clone https://github.com/ClemTheAlien/ClemTheAliensPicomConf
 sudo cp picom.conf /etc/xdg/picom.conf
 ```
-
+NOW YOUR DONE :) 
