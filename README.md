@@ -1,10 +1,9 @@
 # Clems-DWM-Install
 Here are some videos I used to make my install 
 In order to maintain your DWM install i recommend learning some basic C and also how to manually patch alongside how DWM works in general.
-
-https://www.youtube.com/watch?v=6MaTMuFVGck&t=2713s&pp=ygUDZHdt
-https://www.youtube.com/watch?v=unqsQJaECv0&pp=ygUDZHdt
-https://www.youtube.com/watch?v=DlViR5Ymg4A&t=558s&pp=ygUIZHdtIHJpY2U%3D
+- https://www.youtube.com/watch?v=6MaTMuFVGck&t=2713s&pp=ygUDZHdt
+- https://www.youtube.com/watch?v=unqsQJaECv0&pp=ygUDZHdt
+- https://www.youtube.com/watch?v=DlViR5Ymg4A&t=558s&pp=ygUIZHdtIHJpY2U%3D
 
 ## Install Base 
 This is ClemTheAlien's DWM Rice.
