@@ -86,6 +86,8 @@ feh --bg-fill [WAllPAPER DIR]/[WALLPAPER]
 ```sh
 git clone https://github.com/ClemTheAlien/ClemTheAliensPicomConf
 sudo cp picom.conf /etc/xdg/picom.conf
+
+#Recompile DWM afterwards for it to take effect 
 ```
 NOW YOUR DONE :) 
 
