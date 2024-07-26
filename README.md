@@ -1,4 +1,11 @@
 # Clems-DWM-Install
+Here are some videos I used to make my install 
+In order to maintain your DWM install i recommend learning some basic C and also how to manually patch alongside how DWM works in general.
+
+https://www.youtube.com/watch?v=6MaTMuFVGck&t=2713s&pp=ygUDZHdt
+https://www.youtube.com/watch?v=unqsQJaECv0&pp=ygUDZHdt
+https://www.youtube.com/watch?v=DlViR5Ymg4A&t=558s&pp=ygUIZHdtIHJpY2U%3D
+
 ## Install Base 
 This is ClemTheAlien's DWM Rice.
 First Git Clone the latest DWM, Dmenu and St repos into your Linux OS or use the binaries uploaded here.
@@ -21,21 +28,31 @@ cd -
 cd st & sudo make clean install
 ```
 
+### Xinitrc
 
-### Adding DWM to exec 
+Install xorg and xorg-xinit
+
 ```sh
-echo "#!/bin/bash" > .xinitrc
-echo "exec dwm" > .xinitrc
+sudo pacman -S xorg xorg-xinnit
+#Change the install method based upon your linux distro. Clem uses Arch currently.
 ```
 
-NOTE: you can adjust your resolution if there are errors with Xrandr
+Make and edit .xinitrc and add (you can do this with an echo command also)
+```
+!#/bin/bash
+[add any additional commands you want to run before dwm such as the program that adds ur background before the "exec dwm"]
+exec dwm
+```
+
+NOTE: If you have any resolution errors use Xrandr to fix them. What you need to do resolution wise might change if you have one or more monitors.
+
 
 ## Ricing
 ### Patches
 Save these patches to your Downloads
 https://dwm.suckless.org/patches/alwayscenter/
 https://dwm.suckless.org/patches/uselessgap/
-https://dwm.suckless.org/patches/alpha/
+
 
 or download the patches from this repo 
 
@@ -60,7 +77,6 @@ NOTE: Check if each patch works seperately. You might have to do some copy and p
 Install Feh and Picom
 ```sh
 sudo pacman -S feh picom 
-#Change the install method based upon your linux distro. Clem uses Arch currently.
 ```
 Set Wallpaper 
 ```sh
@@ -73,3 +89,5 @@ git clone https://github.com/ClemTheAlien/ClemTheAliensPicomConf
 sudo cp picom.conf /etc/xdg/picom.conf
 ```
 NOW YOUR DONE :) 
+
+
