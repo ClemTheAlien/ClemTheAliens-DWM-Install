@@ -7,7 +7,8 @@ In order to maintain your DWM install i recommend learning some basic C and also
 
 ## Install Base 
 This is ClemTheAlien's DWM Rice.
-First Git Clone the latest DWM, Dmenu and St repos into your Linux OS or use the binaries uploaded here.
+First Git Clone the latest DWM, Dmenu and St repos into your Linux OS or use the binaries uploaded here. The Stock folder holds all of the patches and tar.gz I used to make this install. If you download from Stock, make sure to extract the tar.gzs. 
+
 ```sh 
 git clone https://git.suckless.org/dwm
 git clone git://git.suckless.org/dmenu
@@ -18,7 +19,7 @@ NOTE: ST will be removed later and replaced by Alacritty. Just for a base DWM in
 
 Make clean install all of these folders
 ```sh
-mkdir -p .desktopenv    #All of the Desktop Enviroment will exist in this dotfile 
+mkdir -p .desktopenv    #All of the Desktop Enviroment will exist in this dotfile  
 mv dwm dmenu st .desktopenv
 cd dmenu & sudo make clean install
 cd -
@@ -91,4 +92,31 @@ sudo cp picom.conf /etc/xdg/picom.conf
 ```
 NOW YOUR DONE :) 
 
+##Extra 
 
+### Runing something concurrently with another keybinding action (Ex: running J4-Dmenu-Desktop with DMENU on Mod+P)
+If you want to use j4-dmenu-desktop for a more readable dmenu, insert
+
+```
+static const char *j4[] = {"j4-dmenu-desktop", NULL};
+```
+ under the "/* commands */ section of config.h then insert
+
+ ```
+ static const char *j4[] = {"j4-dmenu-desktop", NULL};
+ ```
+
+ so that everytime MOD+P is pressed both dmenu and j4-dmenu-desktop
+
+ I HIGHLY recommend learning some C so you fully understand your config.h and DWM in general
+
+### Changing terminal 
+ Now if you want to change your terminal change the 
+ ```
+ static const char *termcmd[]  = { "st", NULL };
+ ```
+
+ under the "/* commands */"  section to whatever terminal you want
+
+ Thats all my tips for now :)
+ 
