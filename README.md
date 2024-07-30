@@ -41,7 +41,7 @@ Make and edit .xinitrc and add (you can do this with an echo command also)
 ```
 !#/bin/bash
 [add any additional commands you want to run before dwm such as the program that adds ur background before the "exec dwm"]
-exec dwm
+exec dwm & picom
 ```
 
 NOTE: If you have any resolution errors use Xrandr to fix them. What you need to do resolution wise might change if you have one or more monitors.
